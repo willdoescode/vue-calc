@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header headText="Wills Vue.js Calculator" />
-    <Calculator msg="Welcome to Your Vue.js App"/>
+    <Calculator />
   </div>
 </template>
 
