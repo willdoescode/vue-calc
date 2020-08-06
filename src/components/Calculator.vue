@@ -1,6 +1,6 @@
 <template>
   <div class="calculator">
-    <div class="display">{{ current || '0'  }}</div>
+    <div class="display">{{ Number(current).toLocaleString() || '0'  }}</div>
     <div @click="clear" class="btn b">C</div>
     <div @click="sign" class="btn b">+/-</div>
     <div @click="percent" class="btn b">%</div>
@@ -106,6 +106,9 @@ export default {
   padding-right: 25px;
   padding-top: 40px;
   border-radius: 16px 16px 0 0;
+  transition: 0.5s;
+  word-wrap    : break-word;
+  overflow-wrap: break-word;
 }
 
 .two-span {
