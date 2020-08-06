@@ -1,12 +1,15 @@
 <template>
   <div class="head">
-    Wills Vue.js Calculator
+    {{ headText }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    headText: String
+  }
 }
 </script>
 
